@@ -1,0 +1,8 @@
+.env
+.git
+.github
+venv
+.venv
+__pycache__
+*.faiss
+tests

@@ -24,6 +24,7 @@ index_cuad.faiss/
 temp_faiss/
 data/*
 !data/.gitkeep
+!data/sample_contracts.json
 
 # Editors / OS
 .vscode/

@@ -1,0 +1,19 @@
+{
+  "documents": [
+    {
+      "id": 1,
+      "title": "Service Agreement - Northwind Analytics",
+      "text": "SERVICE AGREEMENT\n\nThis Service Agreement (the \"Agreement\") is entered into on 15 March 2023 between Northwind Analytics SARL (the \"Client\") and Atlas Consulting SA (the \"Provider\").\n\n1. Services. The Provider shall deliver data engineering and reporting services as described in Annex A.\n\n2. Fees. The Client shall pay a total fixed fee of 48,000 EUR, invoiced in four quarterly instalments.\n\n3. Term and Termination. This Agreement has an initial term of twelve (12) months. Either party may terminate it with sixty (60) days' written notice.\n\n4. Confidentiality. Each party shall keep confidential all non-public information received from the other party for a period of five (5) years after termination.\n\nSigned by:\nSara Benali, Chief Executive Officer, Northwind Analytics SARL, on 15 March 2023\nMarc Dubois, Managing Partner, Atlas Consulting SA, on 16 March 2023"
+    },
+    {
+      "id": 2,
+      "title": "Mutual Non-Disclosure Agreement - Helios Robotics",
+      "text": "MUTUAL NON-DISCLOSURE AGREEMENT\n\nThis Mutual Non-Disclosure Agreement is made as of 2 June 2022 by and between Helios Robotics Inc. (the \"Discloser\") and Cedar Labs Ltd. (the \"Recipient\").\n\n1. Purpose. The parties wish to evaluate a potential partnership on autonomous warehouse robots.\n\n2. Obligations. The Recipient shall use Confidential Information solely for the Purpose and shall not disclose it to any third party without prior written consent.\n\n3. Duration. The obligations in this Agreement survive for three (3) years from the date of disclosure.\n\n4. Governing Law. This Agreement is governed by the laws of the State of Delaware.\n\nSigned by:\nEmily Carter, General Counsel, Helios Robotics Inc., on 2 June 2022\nYoussef Amrani, CTO, Cedar Labs Ltd., on 3 June 2022"
+    },
+    {
+      "id": 3,
+      "title": "Software License Agreement - Orion Retail",
+      "text": "SOFTWARE LICENSE AGREEMENT\n\nThis Software License Agreement is entered into on 1 January 2024 between Orion Retail Group (the \"Licensee\") and Vega Software GmbH (the \"Licensor\").\n\n1. License Grant. The Licensor grants the Licensee a non-exclusive, non-transferable license to use the Vega POS software in up to 120 stores.\n\n2. License Fee. The annual license fee is confidential and set out in a separate pricing schedule.\n\n3. Support. The Licensor shall provide support during business hours with a response time of four (4) hours for critical incidents.\n\n4. Liability. The Licensor's total liability shall not exceed the fees paid in the twelve (12) months preceding the claim.\n\nSigned by:\nLina Haddad, Chief Operating Officer, Orion Retail Group, on 1 January 2024\nJonas Weber, Managing Director, Vega Software GmbH, on 1 January 2024"
+    }
+  ]
+}
