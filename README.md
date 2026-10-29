@@ -1,4 +1,4 @@
-# ⚖️ Legal Contract Chatbot
+# Legal Contract Chatbot
 
 [![CI](https://github.com/houdamardas1/legal-chatbot/actions/workflows/ci.yml/badge.svg)](https://github.com/houdamardas1/legal-chatbot/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue)
@@ -9,7 +9,13 @@ An AI assistant that answers questions about legal contracts. It retrieves the r
 
 Built as my end-of-studies internship project (PFE), then refactored into a tested, packaged application.
 
-## ✨ Features
+## Demo
+
+[![Watch the demo video](docs/demo-poster.png)](docs/demo-short.mp4)
+
+A 40-second walkthrough of the Streamlit app: indexing a contract corpus, asking questions in plain language, source-cited answers, field extraction, bilingual output and contract summarisation. [Watch the video](docs/demo-short.mp4).
+
+## Features
 
 - **Grounded question answering**: answers are generated only from retrieved contract excerpts, with `[doc_id]` citations and a source panel in the UI.
 - **Structured field extraction**: client, contract type, contract date, signatories (name, title, signature date) and amount are extracted as strict JSON, validated, cleaned of template placeholders (`_____`, `[Name]`, `insert legal name`…) and normalised (ISO dates).
@@ -20,7 +26,7 @@ Built as my end-of-studies internship project (PFE), then refactored into a test
 - **Bilingual output**: optional French → English translation with Meta's M2M100.
 - **Two interfaces**: a Streamlit chat app and a `legal-chatbot` CLI.
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 flowchart LR
@@ -49,11 +55,11 @@ flowchart LR
 
 Heavy dependencies (PyTorch, FAISS, Transformers) are imported lazily, so the core logic installs in seconds and is fully unit-testable without downloading any model.
 
-## 🧰 Tech stack
+## Tech stack
 
 Python · LangChain · FAISS · Hugging Face (sentence-transformers, Transformers) · Groq (Llama 3) · Streamlit · Pydantic · pytest · Ruff · GitHub Actions · Docker
 
-## 🚀 Getting started
+## Getting started
 
 ### 1. Install
 
@@ -101,7 +107,7 @@ docker build -t legal-chatbot .
 docker run --env-file .env -p 8501:8501 legal-chatbot
 ```
 
-## 💬 Example questions
+## Example questions
 
 | Question | Mode |
 |---|---|
@@ -111,7 +117,7 @@ docker run --env-file .env -p 8501:8501 legal-chatbot
 | *Que prévoit la clause de confidentialité ?* | open QA |
 | *Comment résilier le contrat ?* | open QA |
 
-## 🧪 Tests and quality
+## Tests and quality
 
 ```bash
 pip install -e ".[dev]" langchain-community faiss-cpu streamlit
@@ -121,17 +127,17 @@ ruff check . && ruff format --check .
 
 The suite (78 tests) covers intent routing, JSON parsing of messy LLM output, placeholder filtering, date normalisation, the retry policy of the Groq client (mocked HTTP), corpus validation, the extraction → QA fallback logic (fake LLM and retriever), a FAISS build/save/load round trip with deterministic fake embeddings, and headless Streamlit smoke tests. CI runs lint and tests on Python 3.10, 3.11 and 3.12 for every push.
 
-## 🛣️ Roadmap
+## Roadmap
 
 - Evaluation harness on CUAD's annotated clauses (retrieval recall@k, extraction F1).
 - Hybrid retrieval (BM25 + dense) and a cross-encoder re-ranker.
 - PDF ingestion with page-level citations.
 - Streaming responses in the UI.
 
-## 🔒 Security
+## Security
 
 No credentials are stored in this repository. The API key is read from the environment (or a git-ignored `.env`) and never logged. FAISS indexes are loaded with pickle, so only load indexes you built yourself.
 
-## 👩‍💻 Author
+## Author
 
 **Houda Mardas** · [GitHub](https://github.com/houdamardas1)

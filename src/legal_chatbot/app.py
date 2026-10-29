@@ -63,7 +63,7 @@ def _render_answer(answer: Answer, show_debug: bool) -> None:
 
 
 def main() -> None:
-    st.set_page_config(page_title="Legal Contract Chatbot", page_icon="⚖️", layout="wide")
+    st.set_page_config(page_title="Legal Contract Chatbot", layout="wide")
     settings = Settings.from_env()
 
     with st.sidebar:
@@ -78,7 +78,7 @@ def main() -> None:
         st.caption(f"LLM : `{settings.groq_model}`")
         st.caption(f"Embeddings : `{settings.embedding_model}`")
 
-    st.title("⚖️ Chatbot juridique")
+    st.title("Chatbot juridique")
     st.write(
         "Posez une question sur vos contrats : les réponses sont fondées sur les documents indexés."
     )
