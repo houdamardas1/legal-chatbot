@@ -1,0 +1,36 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.ENV.txt
+.ENV.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+venv/
+.venv/
+env/
+
+# Data, indexes and model artifacts
+*.faiss
+*.pkl
+*.pickle
+*.db
+*.sqlite3
+index_cuad.faiss/
+temp_faiss/
+data/*
+!data/.gitkeep
+
+# Editors / OS
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+
+# Node (if a frontend is added later)
+node_modules/

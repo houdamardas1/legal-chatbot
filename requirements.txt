@@ -1,0 +1,13 @@
+streamlit
+python-dotenv
+requests
+dateparser
+langchain>=0.2,<1.0
+langchain-community<1.0
+langchain-core<1.0
+langchain-huggingface
+sentence-transformers
+faiss-cpu
+transformers
+torch
+sentencepiece
